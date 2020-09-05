@@ -99,7 +99,10 @@ url =  http://localhost:5000/api/v1/transacao (GET)
 #Endpoint Consultar Transacoes pelo campo  cliente:
 
 Method: GET
-url =  http://localhost:5000/api/v1/transacao<cpf>/ (GET)
+
+url =  http://localhost:5000/api/v1/transacao/parametrocpf"/ (GET)
+
+modelo de url = /api/v1/transacao/095.215.910-01       ou     /api/v1/transacao/09521591001
 
 Modelo de cpf esperado com caracteres: 094.214.930-01
 Modelo de cpf esperado sem caracteres: 09421493001

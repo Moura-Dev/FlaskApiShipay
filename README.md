@@ -1,21 +1,21 @@
-#APi-FLASK-PYTHON
+# APi-FLASK-PYTHON
 Desafio Shipay :
 
 Modo de uso sem docker:
 
-#Crie um virtualenv 
+# Crie um virtualenv 
 python3 -m virtualenv venv
 
-#Ativar virtualenv
+# Ativar virtualenv
 source /venv/bin/activate
 
 #Para usar o sistema
 pip install -r requirements.txt
 
-#Exportar flask:
+# Exportar flask:
 Export FLASK_APP=app
 
-#Conectar e Criar Banco de Dados
+# Conectar e Criar Banco de Dados
 Edit app.conf app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost/pdv' no arquivo __init__.py com suas configuraçoes
 
 
@@ -43,7 +43,7 @@ Method: Get
 url =  http://localhost:5000/api/v1/transacao (GET)
 
 
-#Endpoint Consultar Transacoes pelo campo  cliente:
+# Endpoint Consultar Transacoes pelo campo  cliente:
 
 Method: GET
 url =  http://localhost:5000/api/v1/transacao<cpf>/ (GET)
@@ -56,7 +56,7 @@ Modelo de cpf esperado sem caracteres: 09421493001
 
 
 
-#Modelo de Uso com Docker:
+# Modelo de Uso com Docker:
 
 no terminal execute o build:
 

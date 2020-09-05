@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: "pdv"
+  app:
+    build: .
+    container_name: "Flask_Shipay"
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - "5000:5000"

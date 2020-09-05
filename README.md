@@ -28,7 +28,7 @@ e pode ligar o aplicativo usando o comando flask run
 # Endpoint Post:
 Modelo de post Url Esperada pela API:
 Method: POST
-url =  http://localhost:5000/api/v1/transacao (POST)
+url = /api/v1/transacao (POST)
 
 {
    "estabelecimento": "45.283.163/0001-67",
@@ -40,13 +40,13 @@ url =  http://localhost:5000/api/v1/transacao (POST)
 # Endpoint Consultar Transacoes (Listar todas as transacoes no banco):
 
 Method: Get
-url =  http://localhost:5000/api/v1/transacao (GET)
+url =  /api/v1/transacao (GET)
 
 
 # Endpoint Consultar Transacoes pelo campo  cliente:
 
 Method: GET
-url =  http://localhost:5000/api/v1/transacao<cpf>/ (GET)
+url =  /api/v1/transacao<cpf>/ (GET)
 
 Modelo de cpf esperado com caracteres: 094.214.930-01
 Modelo de cpf esperado sem caracteres: 09421493001
@@ -63,7 +63,8 @@ no terminal execute o build:
 docker-compose -f "docker-compose.yml" up -d --build
 
 Apos subir o docker 
-use a funcao atacher shell no docker da aplicação flask e execute os seguintes comandos:
+use a funcao atacher shell no docker da aplicação flask para criar as tabelas do banco de dados
+e execute os seguintes comandos:
 
 flask db init
 
@@ -81,7 +82,7 @@ flask run
 # Endpoint Post:
 Modelo de post Url Esperada pela API:
 Method: POST
-url =  http://localhost:5000/api/v1/transacao (POST)
+url = /api/v1/transacao (POST)
 
 {
    "estabelecimento": "45.283.163/0001-67",
@@ -93,14 +94,14 @@ url =  http://localhost:5000/api/v1/transacao (POST)
 # Endpoint Consultar Transacoes (Listar todas as transacoes no banco):
 
 Method: Get
-url =  http://localhost:5000/api/v1/transacao (GET)
+url =  /api/v1/transacao (GET)
 
 
 #Endpoint Consultar Transacoes pelo campo  cliente:
 
 Method: GET
 
-url =  http://localhost:5000/api/v1/transacao/parametrocpf"/ (GET)
+url = /api/v1/transacao/parametrocpf"/ (GET)
 
 modelo de url = /api/v1/transacao/095.215.910-01       ou     /api/v1/transacao/09521591001
 
